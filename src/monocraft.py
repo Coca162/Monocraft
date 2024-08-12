@@ -239,6 +239,7 @@ def generateFont(*, black=False, bold=False, semibold=False, light=False, extral
 			continue
 		font.generate(f"{outputDir}{font.fontname}.otf")
 		font.generate(f"{outputDir}{font.fontname}.ttf")
+		font.generate(f"{outputDir}{font.fontname}.woff")
 
 	if output_ttc:
 		fontList[0].generateTtc(
